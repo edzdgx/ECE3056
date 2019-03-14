@@ -1,0 +1,34 @@
+ECE 3056 Fall 2018
+Lab Assignment 4
+
+Name: Edward Zhou
+GT Username: xzhou309
+
+Problem 1B
+----------
+Total execution time:
+CPU = 1: 67.6s
+CPU = 2: 35.8s
+CPU = 4: 33.5s
+
+Execution time decreases as number of CPU increases, not linearly, but exponentially.
+Because with 2+ CPUs, different threads are mostly at idle state.
+
+Problem 2B
+----------
+B.1 Because in real life situations, context switches will be invoked more often,
+    due to misses.
+B.2 
+Total execution time:
+CPU = 1: 283.1s
+CPU = 2: 106.4s
+CPU = 4: 0.4s
+LRTF with 4 CPUs has the lowest execution/waiting time. Because the execution time is
+decreasing exponentially with LRTF as number of CPUs goes up.
+
+Problem 3B
+----------
+800ms:
+# of Context Switches: 99
+Total execution time: 67.6 s
+Total time spent in READY state: 389.9 s
